@@ -59,7 +59,7 @@ void draw() {
   else if (count < 25) {
     checkerboard();
   }
-  count = (count + 1) % 20;
+  count = (count + 1) % 25;
 }
 
 /* ===================
