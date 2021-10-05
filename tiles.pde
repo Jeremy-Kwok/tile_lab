@@ -1,3 +1,4 @@
+
 /* ===================
  Global variables:
  numCols, numRows: number of tiles hroizontally and vertically
@@ -22,7 +23,7 @@ void settings() {
   numCols = 20;
   rectWidth = 20;
   rectHeight = 20;
-  size(0, 0);
+  size(500, 500);
 }
 
 
@@ -66,6 +67,13 @@ void draw() {
   Create a grid of rectangles using the global variables.
  =================== */
 void tile() {
+  int x = 0;
+  int y = 0;
+  int newx = rectWidth;
+  int newy = rectHeight;
+  while (width*height/(rectWidth*rectHeight)<numRows*numCols){
+    rect(x, y, newx, newy);
+  }
 
 }
 
